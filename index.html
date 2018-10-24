@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lists</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+        /* Level 1 */
+        .unstyled {
+            list-style: none;
+            padding: 0;
+        }
+        /* Level 2 */
+        .importance {
+            font-size: 20px;
+        }
+        .green {
+            color: #008000;
+        }
+        .aqua {
+            color: #25fffc;
+        }
+        .light-blue {
+            color: #4086cc;
+        }
+        .red {
+            color: #dd3f37;
+        }
+        .yellow {
+            color: #f3c81b;
+        }
+        .muted {
+            color: #777777;
+        }
+
+        .callout {
+            width: 50%;
+            padding: 10px;
+            color: #ffffff;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border-left: 4px solid #e86c40;
+        }
+
+        .callout h4 {
+            line-height: 24px;
+            margin-top: 0;
+        }
+
+        .callout p {
+            margin-botom: 0;
+        }
+
+        .danger-callout {
+            background: red;
+        }
+
+        .info-callout {
+            background: #15c1ef;
+        }
+
+        .warning-callout {
+            background: #f3ab11
+        }
+
+        .success-callout {
+            background: #02a657;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Level 1 -->
+<h3>Unordered List</h3>
+<ul>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+        <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+        </ul>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+</ul>
+<h3>Ordered List</h3>
+<ol>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+        <ol>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Nulla volutpat aliquam velit</li>
+        </ol>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+</ol>
+<h3>Unstyled List</h3>
+<ul class="unstyled">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+        <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+        </ul>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+</ul>
+
+<!-- Level 2 -->
+<h3>Text Emphasis</h3>
+<p class="importance">Lead to emphasize importance</p>
+<p class="green">Text green to emphasize success</p>
+<p class="aqua">Text aqua to emphasize info</p>
+<p class="light-blue">Text light blue to emphasize info (2)</p>
+<p class="red">Text red to emphasize danger</p>
+<p class="yellow">Text yellow to emphasize warning</p>
+<p class="muted">Text muted to emphasize general</p>
+
+<!-- Level 3 -->
+<div class="danger-callout callout">
+    <h4>I am a danger callout!</h4>
+    <p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+</div>
+<div class="info-callout callout">
+    <h4>I am an info callout!</h4>
+    <p>Follow the steps to continue to payment.</p>
+</div>
+<div class="warning-callout callout">
+    <h4>I am a warning callout!</h4>
+    <p>This is a yellow callout.</p>
+</div>
+<div class="success-callout callout">
+    <h4>I am a success callout!</h4>
+    <p>This is a green callout.</p>
+</div>
+
+</body>
+</html>
